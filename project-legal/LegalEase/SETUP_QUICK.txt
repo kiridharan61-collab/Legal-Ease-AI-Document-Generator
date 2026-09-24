@@ -1,0 +1,20 @@
+LEGAL EASE QUICK START
+
+1. Open the LegalEase folder in VS Code (not its parent `project-legal` folder).
+2. If your terminal is currently in `project-legal`, run:
+   cd LegalEase
+3. Terminal:
+   python -m venv .venv
+4. Activate:
+   .venv\Scripts\activate
+5. Install:
+   pip install -r requirements.txt
+6. Copy .env.example to .env and add GEMINI_API_KEY.
+7. Terminal 1:
+   uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000
+8. Terminal 2:
+   streamlit run app.py
+9. Browser:
+   http://localhost:8501
+10. Tests:
+   pytest -q
